@@ -1,18 +1,17 @@
-function justInvoke(fn) {
-  return fn() ;
-
+let justInvoke = (fn) => {
+  return fn();
 }
 
-function setThisWithCall(fn, thisValue, arg) {
-  return fn.call(thisValue, arg);
+let setThisWithCall = (fn, thisValue, arg) => {
+ return fn.call(thisValue, arg);
 }
 
-function setThisWithApply(fn, thisValue, arg) {
-  return fn.apply(thisValue, [arg[0], arg[1]]);
+let setThisWithApply = (fn, thisValue, args) => {
+  return fn.apply(thisValue, args);
 }
 
-function returnNewFunctionOf(functionToBeCopied, thisValue) {
+let returnNewFunctionOf = (functionToBeCopied, thisValue) => {
   let newFunction = functionToBeCopied.bind(thisValue);
   return newFunction;
-
+  
 }
