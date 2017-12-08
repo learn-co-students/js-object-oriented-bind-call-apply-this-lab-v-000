@@ -7,6 +7,7 @@ describe('global functions', function() {
 
   beforeEach(function(){
      returnsThisAndArgs = function(){ return {thisValue: this, arguments: Array.from(arguments)} }
+     console.log(this);
      bob = {name: 'bob'}
      age = 18
   })
