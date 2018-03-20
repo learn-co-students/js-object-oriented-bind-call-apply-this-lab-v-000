@@ -14,4 +14,3 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
   return functionToBeCopied.bind(thisValue);
 }
 
-console.log(returnNewFunctionOf);
