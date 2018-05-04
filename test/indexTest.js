@@ -13,7 +13,7 @@ describe('global functions', function() {
 
   describe('invokeFunction', function(){
     it('calls and returns the function as a callback, that shows that this is global from the callback', function(){
-      expect(justInvoke(returnsThisAndArgs).thisValue).to.equal(window)
+      expect(invokeFunction(returnsThisAndArgs).thisValue).to.equal(window)
     })
   })
 
