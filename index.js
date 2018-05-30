@@ -1,15 +1,4 @@
-function justInvoke(fn) {
-  return fn()
-}
-
-function setThisWithCall(fn, dis, args) {
-  return fn.call(dis, args)
-}
-
-function setThisWithApply(fn, dis, args) {
-  return fn.apply(dis, args)
-}
-
-function returnNewFunctionOf(fn, dis) {
-  return fn.bind(dis)
-}
+const justInvoke = fn => fn()
+const setThisWithCall = (fn, dis, args) => fn.call(dis, args)
+const setThisWithApply = (fn, dis, args) => fn.apply(dis, args)
+const returnNewFunctionOf = (fn, dis) => fn.bind(dis)
