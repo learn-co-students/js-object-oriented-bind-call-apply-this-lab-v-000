@@ -4,9 +4,8 @@ function justInvoke(fn){
 
 
 function setThisWithCall(fn, thisValue, arg){
-  let bob = {name: 'bob'}
-  let age = 18
-  this.arg = age
+
+  this.arg = arg
   this.thisValue = thisValue
    return fn.call(thisValue, arg)
 }
