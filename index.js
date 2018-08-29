@@ -12,5 +12,7 @@ function setThisWithApply(fn, thisValue, args) {
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  return functionToBeCopied.bind(thisValue);
+//  return functionToBeCopied.bind(thisValue);
+    const rtnFn = functionToBeCopied.bind(thisValue);
+    return rtnFn;
 }
