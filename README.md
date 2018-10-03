@@ -1,4 +1,4 @@
-# Bind, Call, Apply Lab
+ # Bind, Call, Apply Lab
 
 ## Objectives
 
