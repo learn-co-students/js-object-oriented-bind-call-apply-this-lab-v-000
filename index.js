@@ -1,1 +1,2 @@
-function justInvoke
+// function justInvoke
+
