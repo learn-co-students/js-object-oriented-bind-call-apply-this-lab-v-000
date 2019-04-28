@@ -10,12 +10,12 @@ describe('global functions', function() {
      bob = {name: 'bob'}
      age = 18
   })
-
-  describe('justInvoke', function(){
-    it('calls and returns the function as a callback, that shows that this is global from the callback', function(){
-      expect(justInvoke(returnsThisAndArgs).thisValue).to.equal(window)
-    })
-  })
+  // [] uncomment
+  // describe('justInvoke', function(){
+  //   it('calls and returns the function as a callback, that shows that this is global from the callback', function(){
+  //     expect(justInvoke(returnsThisAndArgs).thisValue).to.equal(window)
+  //   })
+  // })
 
   describe('setThisWithCall', function(){
     let age = 18
