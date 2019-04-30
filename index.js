@@ -7,3 +7,7 @@ function justInvoke(fn) {
 function setThisWithCall(fn, value, arg) {
   return fn.call(value, arg);
 }
+
+function setThisWithApply() {
+  
+}
