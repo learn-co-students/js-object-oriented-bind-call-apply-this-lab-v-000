@@ -29,5 +29,8 @@
   },
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "jshint": "^2.11.0"
   }
 }
