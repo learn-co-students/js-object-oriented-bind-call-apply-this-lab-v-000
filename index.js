@@ -1,12 +1,12 @@
 
-// function justInvoke(fn) {
-//   // debugger;
-//   let x = fn();
+function justInvoke(fn) {
+  return fn();
+}
 
-//   // fn.call(this);
-//   return x.thisValue;
-// }
+function setThisWithCall(fn, thisValue, arg) {
+  return fn.call(thisValue, arg);
+}
 
-function setThisWithCall(fn, thisValue, args) {
-  fn.call(thisValue,);
+function setThisWithApply(fn, obj, arr) {
+  return fn.apply(obj, arr);
 }
